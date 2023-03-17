@@ -1,5 +1,17 @@
 
 
+import os
+
+from re import A
+
+os.system('pip install requests')
+
+os.system('pip install pyfiglet')
+
+os.system('pip install urllib3')
+
+os.system('pip install bs4')
+
 import urllib.request
 
 from urllib.request import urlopen
@@ -20,7 +32,7 @@ nu = 0
 
 n = 0
 
-br = pyfiglet.figlet_format("Kr1tex")
+br = pyfiglet.figlet_format("Kr3tex")
 
 print(R+br)
 
@@ -28,7 +40,7 @@ print(G+'''
 
 [Scrap Your Content From Website ]
 
-Coded By Kr1tex
+Coded By Kr3tex
 
 _________________________________________________''')
 
@@ -39,6 +51,10 @@ try:
     url = urlopen(userurl)
 
     bs = BeautifulSoup(url.read(), 'html.parser')
+
+        
+
+    
 
     while True:
 
